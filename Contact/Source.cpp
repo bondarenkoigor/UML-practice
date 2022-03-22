@@ -1,10 +1,9 @@
 ﻿#include <iostream>
 #include <string>
+#include "Contact.h"
 using namespace std;
 int main()
 {
-
-
 	unsigned int check;
 	do {
 

@@ -1,17 +1,22 @@
 #pragma once
 #include<string>
 
-using namespace std;
 class Car {
 private:
-	string mark;
-	string model;
-	string licensePlate;
+	std::string mark;
+	std::string model;
+	std::string licensePlate;
 public:
-	Car(string mark, string model,string licensePlate)
-	{
-		this->mark = mark;
-		this->model = model;
-		this->licensePlate = licensePlate;
+	Car();
+	Car(std::string mark, std::string model, std::string licensePlate);
+
+	inline std::string getMark() const {
+		return this->mark;
+	}
+	inline std::string getModel() const {
+		return this->model;
+	}
+	inline std::string getLicensePlate() const {
+		return this->licensePlate;
 	}
 };

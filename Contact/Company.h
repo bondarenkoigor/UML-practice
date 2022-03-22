@@ -6,10 +6,13 @@ private:
 	std::string name;
 	std::string position;
 public:
+	Company();	
+	Company(std::string name, std::string pos);
 
-	Company(std::string name,std::string pos) {
-		this->name = name;
-		this->position = pos;
+	inline std::string getName() const {
+		return this->name;
 	}
-
+	inline std::string getPosition() const {
+		return this->position;
+	}
 };

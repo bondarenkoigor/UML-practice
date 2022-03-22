@@ -1,7 +1,6 @@
 #pragma once
 #include<string>
 
-using namespace std;
 class Address {
 private:
 	std::string country;
@@ -10,28 +9,22 @@ private:
 	std::string house;
 	std::string apartment;
 public:
-	Address(string country, string city, string street, string house, string apartment)
-	{
-		this->country = country;
-		this->city = city;
-		this->street = street;
-		this->house = house;
-		this->apartment = apartment;
-	}
+	Address();
+	Address(std::string country, std::string city, std::string street, std::string house, std::string apartment);
 
-	inline getCountry() const {
+	inline std::string getCountry() const {
 		return this->country;
 	}
-	inline getCity() const {
+	inline std::string getCity() const {
 		return this->city;
 	}
-	inline getStreet() const {
+	inline std::string getStreet() const {
 		return this->street;
 	}
-	inline getHouse() const {
+	inline std::string getHouse() const {
 		return this->house;
 	}
-	inline getApartment() const{
+	inline std::string getApartment() const{
 		return this->apartment;
 	}
 };
